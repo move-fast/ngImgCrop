@@ -5,7 +5,7 @@
  * Copyright (c) 2015 Alex Kaul
  * License: MIT
  *
- * Generated at Friday, November 6th, 2015, 1:16:53 PM
+ * Generated at Tuesday, December 1st, 2015, 2:58:30 PM
  */
 (function() {
 'use strict';
@@ -1461,7 +1461,7 @@ crop.factory('cropHost', ['$document', 'cropAreaCircle', 'cropAreaSquare', 'crop
 
         theArea.setX(ctx.canvas.width/2);
         theArea.setY(ctx.canvas.height/2);
-        theArea.setSize(ctx.canvas.width, ctx.canvas.height);
+        theArea.setSize(Math.min(ctx.canvas.width, ctx.canvas.height));
       } else {
         elCanvas.prop('width',0).prop('height',0).css({'margin-top': 0});
       }
